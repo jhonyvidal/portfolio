@@ -1,8 +1,14 @@
 import React from 'react';
 import Logo from '../assets/logo.png'
 import {Link} from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+  const { i18n } = useTranslation();
+  const changeLanguage = (event) => {
+    const selectedLanguage = event.target.value;
+    i18n.changeLanguage(selectedLanguage);
+  }
 
   return (
   <header className='py-8'>
@@ -14,8 +20,16 @@ const Header = () => {
         <a href='/' className='text-gradient btn-link lg:text-[30px]'>
          JHONY VIDAL
         </a>
-        <Link className='btn btn-sm justify-center flex items-center'  activeClass='active' smooth={true} spy={true} to='contact'>Work with me</Link>
+       
+        <div className='flex justify-end items-center'>
+          <select onChange={changeLanguage} className='btn btn-sm justify-center flex items-center' style={{marginRight:'10px'}}>
+            <option value="en" defaultChecked>English</option>
+            <option value="es" >Español</option>
+          </select>
+          <Link className='btn btn-sm justify-center flex items-center'  activeClass='active' smooth={true} spy={true} to='contact'>Work with me</Link>
+        </div>
       </div>
+     
     </div>
   </header>
   );
