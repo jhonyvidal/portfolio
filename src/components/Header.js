@@ -11,7 +11,7 @@ const Header = () => {
         {/* <a href='#'>
           <img  src={Logo} alt=''/>
         </a> */}
-        <a href='#' className='text-gradient btn-link lg:text-[30px]'>
+        <a href='/' className='text-gradient btn-link lg:text-[30px]'>
          JHONY VIDAL
         </a>
         <Link className='btn btn-sm justify-center flex items-center'  activeClass='active' smooth={true} spy={true} to='contact'>Work with me</Link>

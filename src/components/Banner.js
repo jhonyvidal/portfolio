@@ -22,12 +22,14 @@ const Banner = () => {
              <motion.div  variants={fadeIn('up',0.4)} initial="hidden" whileInView={'show'} viewport={{once:false, amount: 0.7}} className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
               <span className='text-white mr-4'>I am a </span>
               <TypeAnimation sequence={[
+                'System Engineer',
+                200,
                 'Developer',
                 2000,
                 'Analyst',
                 2000,
                 'Architect',
-                200,
+                200
               ]}
               speed={50}
               className='text-accent'
@@ -35,10 +37,10 @@ const Banner = () => {
               repeat={Infinity}
               />
              </motion.div>
-             <motion.p variants={fadeIn('up',0.5)} initial="hidden" whileInView={'show'} viewport={{once:false, amount: 0.7}} className='mb-8 max-w-lg mx-auto lg:mx-0'>develop is my passion</motion.p> 
+             <motion.p variants={fadeIn('up',0.5)} initial="hidden" whileInView={'show'} viewport={{once:false, amount: 0.7}} className='mb-8 max-w-lg mx-auto lg:mx-0'>Developing is my true passion.</motion.p> 
              <motion.div variants={fadeIn('up',0.6)} initial="hidden" whileInView={'show'} viewport={{once:false, amount: 0.7}} className='flex max-w-max gap-x-6 items-center mb-12 mx.auto lg:mx-0'>
               <button className='btn btn-lg' onClick={redirect}>Contact me</button>
-              <a href='#' className='text-gradient btn-link'>
+              <a href='/portfolio' className='text-gradient btn-link'>
                 My Portfolio
               </a>
              </motion.div>

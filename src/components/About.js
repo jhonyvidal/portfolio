@@ -3,13 +3,15 @@ import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer'
 import {motion} from 'framer-motion';
 import { fadeIn } from '../variants';
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
   const [ref,inView] = useInView({
     threshould:0.5,
   })
+  const navigate = useNavigate();
   const redirect = () => {
-    window.open('https://api.whatsapp.com/send?phone=+573135959528', '_blank')
+    navigate('/educations', { replace: true })
   };
   return (
   <section className='section' id="about" ref={ref}>
@@ -34,7 +36,7 @@ const About = () => {
           
           <h2 className='h2 text-accent'>About me.</h2>
           <h3 className='h3 mb-4'>i'm a Fullstack Developer with over 6 years of experience</h3>
-          <p className='mb-6'>I have created and developed differents applications with long techonologies such as React, Angular, Ioni, React Native, C#, .Net, PHP, Java and Python </p>
+          <p className='mb-6'>I have created and developed differents applications with long techonologies such as React, Angular, Ionic, React Native, C#, .Net, PHP, Java and Python </p>
           {/* stats */}
           <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
             <div>
@@ -52,9 +54,9 @@ const About = () => {
             <div>
               <div className='text-[40px] font-tertiary text-gradient mb-2'>
                 {
-                  inView ? <CountUp start={0}  end={5} duration={3}/>
+                  inView ? <CountUp start={0}  end={20} duration={3}/>
                   :null
-                }K+
+                }+
               </div>
               <div className='font-primary text-sm tracking-[2px]'> 
                 Projects<br/>
@@ -64,9 +66,9 @@ const About = () => {
             <div>
               <div className='text-[40px] font-tertiary text-gradient mb-2'>
                 {
-                  inView ? <CountUp start={0}  end={12} duration={3}/>
+                  inView ? <CountUp start={0}  end={50} duration={3}/>
                   :null
-                }K+
+                }+
               </div>
               <div className='font-primary text-sm tracking-[2px]'> 
                 Satisfied<br/>
@@ -75,9 +77,9 @@ const About = () => {
             </div>
           </div>
           <div className='flex gap-x-8 items-center'>
-            <button className='btn btn-lg ' onClick={redirect}>Contact me</button>
-            <a href='#' className='text-gradient btn-link'>
-              My Portfolio
+            <button className='btn btn-lg ' onClick={redirect}>My Educations</button>
+            <a href='/skills' className='text-gradient btn-link'>
+              My Skills
             </a>
           </div>
         </motion.div>    
