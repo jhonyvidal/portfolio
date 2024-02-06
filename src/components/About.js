@@ -13,6 +13,9 @@ const About = () => {
   const redirect = () => {
     navigate('/educations', { replace: true })
   };
+  const redirectToSkills = () => {
+    navigate('/skills', { replace: true })
+  };
   return (
   <section className='section' id="about" ref={ref}>
     <div className='container mx-auto'>
@@ -78,7 +81,7 @@ const About = () => {
           </div>
           <div className='flex gap-x-8 items-center'>
             <button className='btn btn-lg ' onClick={redirect}>My Educations</button>
-            <a href='/skills' className='text-gradient btn-link'>
+            <a onClick={redirectToSkills} className='text-gradient btn-link'>
               My Skills
             </a>
           </div>
