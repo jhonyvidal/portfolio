@@ -4,8 +4,11 @@ import { useInView } from 'react-intersection-observer'
 import {motion} from 'framer-motion';
 import { fadeIn } from '../variants';
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+import '../i18n';
 
 const About = () => {
+  const { t } = useTranslation();
   const [ref,inView] = useInView({
     threshould:0.5,
   })
@@ -37,9 +40,9 @@ const About = () => {
         viewport={{once:false,amount:0.3}} 
         className='flex-1'>
           
-          <h2 className='h2 text-accent'>About me.</h2>
-          <h3 className='h3 mb-4'>i'm a Fullstack Developer with over 6 years of experience</h3>
-          <p className='mb-6'>I have created and developed differents applications with long techonologies such as React, Angular, Ionic, React Native, C#, .Net, PHP, Java and Python </p>
+          <h2 className='h2 text-accent'>{t('about.title')}</h2>
+          <h3 className='h3 mb-4'>{t('about.subtitle')}</h3>
+          <p className='mb-6'>{t('about.text')} </p>
           {/* stats */}
           <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
             <div>
@@ -50,8 +53,7 @@ const About = () => {
                 }
               </div>
               <div className='font-primary text-sm tracking-[2px]'> 
-                Years of<br/>
-                Experience
+                <p dangerouslySetInnerHTML={{ __html: t('about.item1') }} />
               </div>
             </div>
             <div>
@@ -62,8 +64,7 @@ const About = () => {
                 }+
               </div>
               <div className='font-primary text-sm tracking-[2px]'> 
-                Projects<br/>
-                Completed
+                <p dangerouslySetInnerHTML={{ __html: t('about.item2') }} />
               </div>
             </div>
             <div>
@@ -74,15 +75,14 @@ const About = () => {
                 }+
               </div>
               <div className='font-primary text-sm tracking-[2px]'> 
-                Satisfied<br/>
-                Clients
+                <p dangerouslySetInnerHTML={{ __html: t('about.item2') }} />
               </div>
             </div>
           </div>
           <div className='flex gap-x-8 items-center'>
-            <button className='btn btn-lg ' onClick={redirect}>My Educations</button>
+            <button className='btn btn-lg ' onClick={redirect}>{t('myeducations')}</button>
             <a onClick={redirectToSkills} className='text-gradient btn-link'>
-              My Skills
+            {t('myskills')} 
             </a>
           </div>
         </motion.div>    
