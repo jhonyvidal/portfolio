@@ -1,0 +1,38 @@
+{
+    "banner": {
+        "title":"YO SOY",
+        "mypassion": "Desarrollar es mi pasión"
+    },
+    "about":{
+        "title":"Acerca de mi.",
+        "subtitle":"Soy un desarrollador Fullstac con mas de 6 años de experiencia",
+        "text":"He creado y desarrollado diferentes aplicaicon a lo largo de mi carrera, con Angular, Ionic, React Native, C#, .Net, PHP, Java and Python",
+        "item1":"Años de<br/>Experiencia",
+        "item2":"Proyectos<br/>Completados",
+        "item3":"Clientes<br/>satisfechos"
+    },
+    "services":{
+        "title":"Que Puedo Hacer",
+        "subtitle":"Soy un desarrollado con experienia en servicios de front y back."
+    },
+    "work":{
+        "title":"Más Recientes<br />trabajos.",
+        "subtitle":"Podemos ver mis ultimos proyectos, incluyendo paginas para el front y servicios para el back, todos los desarrollos usando las ultimas tecnologias."
+    },
+    "contact":{
+        "title":"Mantente en contacto",
+        "subtitle":"Empecemos <br /> Juntos!",
+        "form":{
+            "name":"Nombre",
+            "email":"Correo",
+            "message":"Mensaje"
+        }
+    },
+    "contactme":"Contactame",
+    "myportfolio":"Mi Portafolio",
+    "myeducations":"Mis Estudios",
+    "myskills":"Mis Habilidades",
+    "semework":"Ver mi trabajo",
+    "vieallproyects":"Ver todos los proyectos",
+    "sendmessage":"Enviar Mensaje"  
+}
