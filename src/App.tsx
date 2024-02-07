@@ -6,11 +6,13 @@ import './i18n';
 
 const App = () => {
   return (
-    <div className="bg-site bg-no-repeat bg-cover overflow-hidden">
-        <BrowserRouter>
-          <RootRoutes />
-        </BrowserRouter>
-    </div>
+    <Fragment>
+      {/* <div className="bg-site bg-no-repeat bg-cover overflow-hidden"> */}
+          <BrowserRouter>
+            <RootRoutes />
+          </BrowserRouter>
+      {/* </div> */}
+    </Fragment> 
   );
 };
 

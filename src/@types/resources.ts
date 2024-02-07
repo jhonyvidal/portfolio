@@ -1,9 +1,9 @@
-import translationEn from '../locales/en.json';
-import translationEs from '../locales/es.json';
+import en from '../locales/en.json';
+import es from '../locales/es.json';
 
 const resources = {
-    translationEn,
-    translationEs
+  en,
+  es
 } as const;
 
 export default resources;
