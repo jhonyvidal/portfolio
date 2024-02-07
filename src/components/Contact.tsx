@@ -3,8 +3,11 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { useForm } from 'react-hook-form';
 import { postCustomer } from "../service/modules/customer/customers";
+import '../i18n/config';
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [responseSuccess, setResponseSuccess] = useState<boolean>(false);
   const [responseError, setResponseError] = useState<boolean>(false);
   const [isloading, setIsloading] = useState<boolean>(false);
@@ -46,10 +49,10 @@ const Contact = () => {
           >
             <div>
               <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wide">
-                Get in touch
+                {t('contact.title')}
               </h4>
               <h2 className="text-[45px] lg:text-[90px] leading-none mb-12">
-                Let's work <br /> together!
+              <p dangerouslySetInnerHTML={{ __html: t('contact.subtitle') }} />
               </h2>
             </div>
           </motion.div>
@@ -68,7 +71,7 @@ const Contact = () => {
                 className="bg-transparent border-b py-3 outline-none 
             w-full placeholder:text-white focus:border-accent transition-all"
                 type="text"
-                placeholder="Your name"
+                placeholder={t('contact.form.name')}
                 {...register('name', {required: true})}
               />
               <input
@@ -76,7 +79,7 @@ const Contact = () => {
                 className="bg-transparent border-b py-3 outline-none 
             w-full placeholder:text-white focus:border-accent transition-all"
                 type="text"
-                placeholder="Your email"
+                placeholder={t('contact.form.email')}
                 {...register('email', {required: true})}
               />
               <textarea
@@ -84,10 +87,10 @@ const Contact = () => {
                 className="bg-transparent border-b py-3 outline-none 
                 w-full placeholder:text-white focus:border-accent transition-all
                 resize-none mb-12"
-                placeholder="Your message"
+                placeholder={t('contact.form.message')}
                 {...register('message', {required: true})}
               ></textarea>
-              <button type="submit" className="btn btn-lg">Send message</button>
+              <button type="submit" className="btn btn-lg">{t('sendmessage')}</button>
               {responseSuccess &&
                   <span className="text-header-gradient">Tus datos, fueron recibidos exitosamente a tu correo enviamos link de confirmación.</span>
               }

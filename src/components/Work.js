@@ -5,8 +5,11 @@ import { fadeIn } from "../variants";
 import Img1 from "../assets/portfolio-img01.png";
 import Img2 from "../assets/portfolio-img02.png";
 import Img3 from "../assets/portfolio-img03.png";
+import '../i18n/config';
+import { useTranslation } from 'react-i18next';
 
 function Work() {
+  const { t } = useTranslation();
   const openLink = (url) => {
     window.open(url, "_blank");
   };
@@ -27,15 +30,12 @@ function Work() {
           >
             <div>
               <h2 className=" h2 leading-tight text-accent">
-                My Latest <br />
-                work.
+              <p dangerouslySetInnerHTML={{ __html: t('work.title') }} />
               </h2>
               <p className="max-w-sm mb-16">
-                We can review our latest projects, including pages for front-end
-                and back-end services, all developed using cutting-edge
-                technologies.
+              {t('work.subtitle')}
               </p>
-              <button className="btn btn-sm" onClick={redirect}>View all projects</button>
+              <button className="btn btn-sm" onClick={redirect}>{t('vieallproyects')}</button>
             </div>
 
             <div
