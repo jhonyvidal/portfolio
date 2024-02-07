@@ -29,7 +29,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "i18next-resources-for-ts": "i18next-resources-for-ts toc -i ./src/locales -o ./src/@types/resources.ts"
+    "i18next-resources-for-ts": "i18next-resources-for-ts toc -i ./src/i18n/ -o ./src/@types/resources.ts"
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +50,11 @@
     ]
   },
   "devDependencies": {
+    "@types/react": "^18.2.39",
+    "@types/react-dom": "^18.2.17",
+    "i18next-resources-for-ts": "1.4.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.3",
     "framer-motion": "^8.4.3",
     "react-countup": "^6.4.0",
     "react-icons": "^4.7.1",

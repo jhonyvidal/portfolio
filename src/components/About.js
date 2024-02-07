@@ -4,8 +4,8 @@ import { useInView } from 'react-intersection-observer'
 import {motion} from 'framer-motion';
 import { fadeIn } from '../variants';
 import { useNavigate } from "react-router-dom";
+import '../i18n/config';
 import { useTranslation } from 'react-i18next';
-import '../i18n';
 
 const About = () => {
   const { t } = useTranslation();

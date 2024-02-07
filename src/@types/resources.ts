@@ -1,5 +1,5 @@
-import en from '../locales/en.json';
-import es from '../locales/es.json';
+import en from '../i18n/en/en.json';
+import es from '../i18n/es/es.json';
 
 const resources = {
   en,

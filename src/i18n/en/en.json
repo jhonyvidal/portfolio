@@ -1,0 +1,38 @@
+{
+  "banner": {
+      "title":"I AM A",
+      "mypassion": "Developing is my true passion"
+  },
+  "about":{
+      "title":"About me.",
+      "subtitle":"i'm a Fullstack Developer with over 6 years of experience",
+      "text":"I have created and developed differents applications with long techonologies such as React, Angular, Ionic, React Native, C#, .Net, PHP, Java and Python",
+      "item1":"Years of<br/>Experience",
+      "item2":"Projects<br/>Completed",
+      "item3":"Satisfied<br/>Clients"
+  },
+  "services":{
+      "title":"What I Do.",
+      "subtitle":"I'm a developer with long experience in fullstack services."
+  },
+  "work":{
+      "title":" My Latest <br />work.",
+      "subtitle":"We can review our latest projects, including pages for front-end and back-end services, all developed using cutting-edge technologies."
+  },
+  "contact":{
+      "title":"Get in touch",
+      "subtitle":"Let's work <br /> together!",
+      "form":{
+          "name":"Your name",
+          "email":"Your email",
+          "message":"Your message"
+      }
+  },
+  "contactme":"Contact me",
+  "myportfolio":"My Portfolio",
+  "myeducations":"My Educations",
+  "myskills":"My Skills",
+  "semework":"See my work" ,
+  "vieallproyects":"View all projects",
+  "sendmessage":"Send message"
+}
