@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders About component 1`] = `
+<section
+  className="section"
+  id="about"
+>
+  <div
+    className="container mx-auto"
+  >
+    <div
+      className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen"
+    >
+      <div
+        className="flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
+        style={
+          Object {
+            "opacity": 0,
+            "transform": "translateX(-80px) translateY(0px) translateZ(0)",
+          }
+        }
+      />
+      <div
+        className="flex-1"
+        style={
+          Object {
+            "opacity": 0,
+            "transform": "translateX(80px) translateY(0px) translateZ(0)",
+          }
+        }
+      >
+        <h2
+          className="h2 text-accent"
+        >
+          About me.
+        </h2>
+        <h3
+          className="h3 mb-4"
+        >
+          i'm a Fullstack Developer with over 6 years of experience
+        </h3>
+        <p
+          className="mb-6"
+        >
+          I have created and developed differents applications with long techonologies such as React, Angular, Ionic, React Native, C#, .Net, PHP, Java and Python
+           
+        </p>
+        <div
+          className="flex gap-x-6 lg:gap-x-10 mb-12"
+        >
+          <div>
+            <div
+              className="text-[40px] font-tertiary text-gradient mb-2"
+            />
+            <div
+              className="font-primary text-sm tracking-[2px]"
+            >
+              <p
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Years of<br/>Experience",
+                  }
+                }
+              />
+            </div>
+          </div>
+          <div>
+            <div
+              className="text-[40px] font-tertiary text-gradient mb-2"
+            >
+              +
+            </div>
+            <div
+              className="font-primary text-sm tracking-[2px]"
+            >
+              <p
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Projects<br/>Completed",
+                  }
+                }
+              />
+            </div>
+          </div>
+          <div>
+            <div
+              className="text-[40px] font-tertiary text-gradient mb-2"
+            >
+              +
+            </div>
+            <div
+              className="font-primary text-sm tracking-[2px]"
+            >
+              <p
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Projects<br/>Completed",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="flex gap-x-8 items-center"
+        >
+          <button
+            className="btn btn-lg "
+            onClick={[Function]}
+          >
+            My Educations
+          </button>
+          <a
+            className="text-gradient btn-link"
+            onClick={[Function]}
+          >
+            My Skills
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

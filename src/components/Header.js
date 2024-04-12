@@ -23,8 +23,8 @@ const Header = () => {
        
         <div className='flex justify-end items-center'>
           <select onChange={changeLanguage} className='btn btn-sm justify-center flex items-center' style={{marginRight:'10px'}}>
-            <option value="en" defaultChecked>English</option>
-            <option value="es" >Español</option>
+            <option value="en" defaultChecked style={{background:"gray"}}>English</option>
+            <option value="es" style={{background:"gray"}}>Español</option>
           </select>
           <Link className='btn btn-sm justify-center flex items-center'  activeClass='active' smooth={true} spy={true} to='contact'>Work with me</Link>
         </div>

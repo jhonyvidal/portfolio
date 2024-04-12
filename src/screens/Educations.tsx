@@ -35,7 +35,25 @@ const EducationScreen = () => {
         title: "Asp.Net",
         properties: ["Asp.Net", ".Net Core", "SQL Server"],
         link: "#",
-      }
+      },
+      {
+        img: "img/educations/certificado18_page-0001.jpg",
+        title: "React Ecommerce",
+        properties: ["React","React.js", "Redux", "tailwind"],
+        link: "#",
+      },
+      {
+        img: "img/educations/certificado20_page-0001.jpg",
+        title: "React handle state",
+        properties: ["React","React.js", "Redux", "tailwind"],
+        link: "#",
+      },
+      {
+        img: "img/educations/certificado22_page-0001.jpg",
+        title: "Wordpress Professional",
+        properties: ["PHP","Wordpress", "Boostrap"],
+        link: "#",
+      },
     ],
   };
 
@@ -72,6 +90,36 @@ const EducationScreen = () => {
         title: "Advance software developer",
         properties: ["Architecture", "Software"],
         link: "#",
+      },
+      {
+        img: "img/educations/certificado14_page-0001.jpg",
+        title: "Advance .NET API",
+        properties: [".NET", "Software"],
+        link: "#",
+      },
+      {
+        img: "img/educations/certificado16_page-0001.jpg",
+        title: "C# Clean Code",
+        properties: ["C#", ".NET", "Software"],
+        link: "#",
+      },
+      {
+        img: "img/educations/certificado17_page-0001.jpg",
+        title: ".Net Fundamentals",
+        properties: ["C#", ".NET", "Software"],
+        link: "#",
+      },
+      {
+        img: "img/educations/certificado19_page-0001.jpg",
+        title: "Mongo DB",
+        properties: ["Mongo DB", "No SQL", "Databases"],
+        link: "#",
+      },
+      {
+        img: "img/educations/certificado21_page-0001.jpg",
+        title: "Solid Principles",
+        properties: ["C#", ".Net", "Architecture"],
+        link: "#",
       }
     ],
   };
@@ -91,7 +139,20 @@ const EducationScreen = () => {
         title: "React Native",
         properties: ["React Native","React.js", "Redux", "tailwind"],
         link: "#",
-      },
+      }
+    ],
+  };
+
+  const projectsdevops = {
+    title: "Devops Certifications",
+    content: "For detailed information about my education and certifications.",
+    projects: [
+      {
+        img: "img/educations/certificado15_page-0001.jpg",
+        title: "AWS",
+        properties: ["AWS","Cloud"],
+        link: "#",
+      } 
     ],
   };
 
@@ -101,6 +162,7 @@ const EducationScreen = () => {
       <Portfolio data={projectsFront} />
       <Portfolio data={projectsBack} />
       <Portfolio data={projectsMobile} />
+      <Portfolio data={projectsdevops} />
       {/* <div className='h-[4000px]'></div> */}
     </div>
   );

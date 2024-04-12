@@ -17,10 +17,10 @@ function Portfolio(props) {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-10 mt-50">
           <motion.div
-            variants={fadeIn("right", 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            // variants={fadeIn("right", 0.3)}
+            // initial="hidden"
+            // whileInView={"show"}
+            // viewport={{ once: false, amount: 0.3 }}
             className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0"
           >
             <div className="portfolioTitle">
@@ -64,10 +64,10 @@ function Portfolio(props) {
           </motion.div>
 
           <motion.div
-            variants={fadeIn("left", 0.2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            // variants={fadeIn("left", 0.2)}
+            // initial="hidden"
+            // whileInView={"show"}
+            // viewport={{ once: false, amount: 0.3 }}
             className="flex-1 flex flex-col gap-y-10"
           >
             {/* Map to data not divisible */}

@@ -16,7 +16,8 @@ const About = () => {
   const redirect = () => {
     navigate('/educations', { replace: true })
   };
-  const redirectToSkills = () => {
+  const redirectToSkills = (event) => {
+    event.preventDefault();
     navigate('/skills', { replace: true })
   };
   return (
@@ -81,7 +82,7 @@ const About = () => {
           </div>
           <div className='flex gap-x-8 items-center'>
             <button className='btn btn-lg ' onClick={redirect}>{t('myeducations')}</button>
-            <a onClick={redirectToSkills} className='text-gradient btn-link'>
+            <a onClick={redirectToSkills} className='text-gradient btn-link'  href='#'>
             {t('myskills')} 
             </a>
           </div>

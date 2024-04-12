@@ -22,10 +22,12 @@ const Banner = () => {
               <motion.h1 variants={fadeIn('up',0.3)} initial="hidden" whileInView={'show'} viewport={{once:false, amount: 0.7}} className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>
                 JHONY <span>VIDAL</span>
               </motion.h1>
-             <motion.div  variants={fadeIn('up',0.4)} initial="hidden" whileInView={'show'} viewport={{once:false, amount: 0.7}} className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
-              <span className='text-white mr-4'>{t('banner.title')}</span>
+              <motion.div  variants={fadeIn('up',0.4)} initial="hidden" whileInView={'show'} viewport={{once:false, amount: 0.7}} className=' text-[30px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
+                <span className='text-white mr-4'>{t('banner.title')}</span>
+              </motion.div>
+             <motion.div  variants={fadeIn('up',0.4)} initial="hidden" whileInView={'show'} viewport={{once:false, amount: 0.7}} className='mb-6 text-[30px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
               <TypeAnimation sequence={[
-                'System Engineer',
+                'Engineer',
                 200,
                 'Developer',
                 2000,
@@ -40,8 +42,8 @@ const Banner = () => {
               repeat={Infinity}
               />
              </motion.div>
-             <motion.p variants={fadeIn('up',0.5)} initial="hidden" whileInView={'show'} viewport={{once:false, amount: 0.7}} className='mb-8 max-w-lg mx-auto lg:mx-0'>{t('banner.mypassion')}</motion.p> 
-             <motion.div variants={fadeIn('up',0.6)} initial="hidden" whileInView={'show'} viewport={{once:false, amount: 0.7}} className='flex max-w-max gap-x-6 items-center mb-12 mx.auto lg:mx-0'>
+             {/* <motion.p variants={fadeIn('up',0.5)} initial="hidden" whileInView={'show'} viewport={{once:false, amount: 0.7}} className='mb-8 max-w-lg mx-auto lg:mx-0'>{t('banner.mypassion')}</motion.p>  */}
+             <motion.div variants={fadeIn('up',0.6)} initial="hidden" whileInView={'show'} viewport={{once:false, amount: 0.7}} className='flex max-w-max gap-x-6 items-center mb-5 mx.auto lg:mx-0'>
               <button className='btn btn-lg' onClick={redirect}>{t('contactme')}</button>
               <a href='/portfolio' className='text-gradient btn-link'>
                 {t('myportfolio')}
