@@ -10,25 +10,25 @@ const PortfolioScreen = () => {
       {
         img: "portfolio-img01.png",
         title: "Logistic Service",
-        properties: ["React.js", "Redux", "tailwind"],
+        properties: ["React", "Redux", "tailwind"],
         link: "https://system.deployzone.online/",
       },
       {
         img: "debugploy.png",
         title: "Debugploy Service",
-        properties: ["React.js", "Talwind", "Redux", "React Router Dom"],
+        properties: ["React", "Talwind", "Redux", "React Router Dom"],
         link: "https://debugploy.com/",
       },
       {
         img: "drovi.png",
         title: "Drovi POS Service",
-        properties: ["React.js", "Talwind", "Redux", "React Router Dom"],
+        properties: ["React", "Talwind", "Redux", "React Router Dom"],
         link: "https://drovi.lukis.blog/",
       },
       {
         img: "asistencia-logistica.png",
         title: "Logistic Asistance",
-        properties: ["React.js", "Redux", "tailwind"],
+        properties: ["React", "Redux", "tailwind"],
         link: "https://asistencialogisticacol.com/",
       },
       {

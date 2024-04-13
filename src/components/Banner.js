@@ -9,7 +9,6 @@ import { useTranslation } from 'react-i18next';
 
 const Banner = () => {
   const { t } = useTranslation();
-  console.log("Aqui llegue yo todo esta ok");
   const redirect = () => {
     window.open('https://api.whatsapp.com/send?phone=+573135959528', '_blank')
   };

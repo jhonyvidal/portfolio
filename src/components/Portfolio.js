@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import "../../src/assets/css/customStyles.css";
+import { FaAngular } from "react-icons/fa";
+import iconPipe from "../helpers/IconPipe";
 
 function Portfolio(props) {
   const openLink = (url) => {
@@ -11,7 +13,7 @@ function Portfolio(props) {
     (_, index) => index % 2 === 0
   );
   const proyectPar = props.data.projects.filter((_, index) => index % 2 !== 0);
-  console.log(proyectPar, proyectInpar);
+
   return (
     <section id="work" className="section sectionPortfolio">
       <div className="container mx-auto">
@@ -49,12 +51,10 @@ function Portfolio(props) {
                   <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
                     <span className="text-gradient">{result.title}</span>
                   </div>
-                  <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                    {result.properties.map((prop) => {
+                  <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50" style={{display:"flex"}}>
+                    {result.properties.map((prop, index) => {
                       return (
-                        <span className="text-3x1 text-white">
-                          {prop}&nbsp;
-                        </span>
+                        iconPipe(prop)
                       );
                     })}
                   </div>
@@ -71,10 +71,10 @@ function Portfolio(props) {
             className="flex-1 flex flex-col gap-y-10"
           >
             {/* Map to data not divisible */}
-            {proyectInpar.map((result) => {
-              console.log(result.img);
+            {proyectInpar.map((result, index) => {
               return (
                 <div
+                  key={index}
                   // style={{height:'338px'}}
                   onClick={() => openLink(result.link)}
                   className="group relative overflow-hidden border-2 border-white/50 rounded-xl"
@@ -90,12 +90,10 @@ function Portfolio(props) {
                   <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
                     <span className="text-gradient">{result.title}</span>
                   </div>
-                  <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                  <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50" style={{display:"flex"}}>
                     {result.properties.map((prop) => {
                       return (
-                        <span className="text-3x1 text-white">
-                          {prop}&nbsp;
-                        </span>
+                        iconPipe(prop)
                       );
                     })}
                   </div>

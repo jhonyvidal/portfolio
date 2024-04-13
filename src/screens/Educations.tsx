@@ -15,7 +15,7 @@ const EducationScreen = () => {
       {
         img: "img/educations/certificado03.jpg",
         title: "Developer Object",
-        properties: ["front end", "Css", "HTML"],
+        properties: ["Sass", "Css", "HTML"],
         link: "#",
       },
       {
@@ -27,7 +27,7 @@ const EducationScreen = () => {
       {
         img: "img/educations/certificado08.jpg",
         title: "Reac.js",
-        properties: ["React.js", "Redux", "tailwind"],
+        properties: ["React", "Redux", "tailwind"],
         link: "#",
       },
       {
@@ -39,13 +39,13 @@ const EducationScreen = () => {
       {
         img: "img/educations/certificado18_page-0001.jpg",
         title: "React Ecommerce",
-        properties: ["React","React.js", "Redux", "tailwind"],
+        properties: ["React", "Redux", "tailwind"],
         link: "#",
       },
       {
         img: "img/educations/certificado20_page-0001.jpg",
         title: "React handle state",
-        properties: ["React","React.js", "Redux", "tailwind"],
+        properties: ["React", "Redux", "tailwind"],
         link: "#",
       },
       {
@@ -112,7 +112,7 @@ const EducationScreen = () => {
       {
         img: "img/educations/certificado19_page-0001.jpg",
         title: "Mongo DB",
-        properties: ["Mongo DB", "No SQL", "Databases"],
+        properties: ["Mongodb", "No SQL", "Databases"],
         link: "#",
       },
       {
@@ -131,13 +131,13 @@ const EducationScreen = () => {
       {
         img: "img/educations/certificado09.jpg",
         title: "React Native",
-        properties: ["React Native","React.js", "Redux", "tailwind"],
+        properties: ["React Native","React", "Redux", "tailwind"],
         link: "#",
       },
       {
         img: "img/educations/certificado10.jpg",
         title: "React Native",
-        properties: ["React Native","React.js", "Redux", "tailwind"],
+        properties: ["React Native","React", "Redux", "tailwind"],
         link: "#",
       }
     ],

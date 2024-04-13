@@ -76,7 +76,7 @@ const About = () => {
                 }+
               </div>
               <div className='font-primary text-sm tracking-[2px]'> 
-                <p dangerouslySetInnerHTML={{ __html: t('about.item2') }} />
+                <p dangerouslySetInnerHTML={{ __html: t('about.item3') }} />
               </div>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import React from "react";
+import Loading from "../components/Loading";
 
 const Landing = React.lazy(
   () => import("../screens/Landing")
@@ -22,7 +23,7 @@ export default function RootRoutes(/*props: refProps*/) {
       <Route
         path="/"
         element={
-          <React.Suspense fallback={<></>}>
+          <React.Suspense fallback={<Loading/>}>
             <Landing />
           </React.Suspense>
         }
@@ -33,7 +34,7 @@ export default function RootRoutes(/*props: refProps*/) {
       {/* contact router */}
       <Route path="portfolio"
         element={
-          <React.Suspense fallback={<></>}>
+          <React.Suspense fallback={<Loading/>}>
             <PortfolioScreen />
           </React.Suspense>
         }
@@ -41,7 +42,7 @@ export default function RootRoutes(/*props: refProps*/) {
       {/* contact router */}
       <Route path="skills"
         element={
-          <React.Suspense fallback={<></>}>
+          <React.Suspense fallback={<Loading/>}>
             <SkillsScreen />
           </React.Suspense>
         }
@@ -49,7 +50,7 @@ export default function RootRoutes(/*props: refProps*/) {
       {/* contact router */}
       <Route path="educations"
         element={
-          <React.Suspense fallback={<></>}>
+          <React.Suspense fallback={<Loading/>}>
             <EducationScreen />
           </React.Suspense>
         }

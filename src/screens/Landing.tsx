@@ -1,3 +1,4 @@
+import HashLoader from "react-spinners/HashLoader";
 import About from "../components/About";
 import Banner from "../components/Banner";
 import Contact from "../components/Contact";
